@@ -1,11 +1,11 @@
 {
   "name": "file-extension-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React components for file extension icons",
-  "main": "index.js",
+  "main": "icons/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "convertToComponent": "svgtoreact dir --o ../icons/"
+    "start": "webpack --watch",
+    "build": "webpack --mode development"
   },
   "keywords": [
     "npm",
@@ -17,6 +17,16 @@
   "license": "ISC",
   "dependencies": {
     "react": "^16.13.1",
-    "svg-to-react-cli": "^1.5.0"
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.2.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
   }
 }
